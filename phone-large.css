@@ -1,0 +1,145 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: #35383a;
+	color: #f7f7f7;
+	font-size: 24px;
+}
+
+button {
+	background-color: #35383a;
+	color: #f7f7f7;
+	border: none;
+	text-align: center;
+	border: 2px solid #f7f7f7;
+}
+
+button:hover {
+	background-color: #484077;
+}
+
+input {
+	font-size: 32px;
+	padding: 8px;
+	border-radius: 10px;
+	border: 2px solid #484077;
+}
+
+label {
+	margin-bottom: 30px;
+}
+
+#dialerInput {
+	width: 400px;
+	margin: 5px;
+}
+
+.dialerButton {
+	font-size: 32px;
+	padding: 10px;
+	width: 120px;
+	margin: 5px;
+	float: left;
+}
+
+#numberDial, #numberClear {
+	width: 180px;
+}
+
+#numberDial:hover {
+	background-color: #0ea329;
+}
+
+#numberClear:hover {
+	background-color: #dd3208;
+}
+
+.tabButton {
+	padding: 10px;
+	font-size: 34px;
+	border-radius: 10px 10px 0px 0px;
+	margin-right: 3px;
+}
+
+#tab_bar {
+	width: 100%;
+	border-bottom: 5px solid #484077;
+}
+
+.dialerRow {
+	clear: both;
+}
+
+.contactEntry {
+	font-size: 32px;
+	padding: 10px;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.pageHeader {
+	color: #f7f7f7;
+}
+
+#addContact_add, #addContact_clear {
+	font-size: 32px;
+	padding: 10px;
+	margin-right: 5px;
+}
+
+#contactsTable {
+	width: 700px;
+	border-style: none;
+	border-collapse: collapse;
+}
+
+td, th {
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: none;
+	font-size: 24px;
+}
+
+a {
+	color: #f7f7f7;
+	font-size: 24px;
+}
+
+.trOdd {
+	border: 2px solid #f7f7f7;
+}
+
+.contactPic {
+	width: 120px;
+	height: 120px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+label[for="dialerInput"]
+{
+    display:none;
+}
+
+#switchContainer {
+	float: right;
+	height: 30px;
+	padding: 10px;
+}
+
+#normalUI, #lowVisUI {
+	padding: 5px;
+	font-size: 24px;
+}
+
+#lowVisUI {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #484077;
+}
+
+#normalUI {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}

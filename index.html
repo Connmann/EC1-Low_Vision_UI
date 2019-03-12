@@ -1,0 +1,179 @@
+<html lang="en">
+  <head>
+  	<link rel="stylesheet" href="phone.css">
+    <title>Phone Demo Interface</title>
+  </head>
+  <body>
+    <div id="tab_bar" role="navigation">
+    	<button class="tabButton" id="dialer" accesskey="q">Dialer</button>
+    	<button class="tabButton" id="contacts" accesskey="w">Contact List</button>
+    	<button class="tabButton" id="addContact" accesskey="e">Add Contact</button>
+    	<button class="tabButton" id="help" accesskey="r">Help</button>
+
+    	<div id="switchContainer">
+    		UI Theme:
+    		<button id="normalUI">Normal</button>
+    		<button id="lowVisUI">Low Vision</button>
+    	</div>
+    </div>
+
+    <div id="content" aria-live="polite">
+    	<div id="content_dialer" role="main">
+
+    		<h1 class="pageHeader">Dialer</h1>
+
+    		<form>
+    			<label for="dialerInput">Dialer Input</label>
+				<input id="dialerInput">
+			</form>
+
+    		<div class="dialerRow">
+    			<button class="dialerButton" id="number1" accesskey="1">1</button>
+	    		<button class="dialerButton" id="number2" accesskey="2">2</button>
+	    		<button class="dialerButton" id="number3" accesskey="3">3</button>
+    		</div>
+    		
+    		<div class="dialerRow">
+    			<button class="dialerButton" id="number4" accesskey="4">4</button>
+	    		<button class="dialerButton" id="number5" accesskey="5">5</button>
+	    		<button class="dialerButton" id="number6" accesskey="6">6</button>
+    		</div>
+
+    		<div class="dialerRow">
+    			<button class="dialerButton" id="number7" accesskey="7">7</button>
+	    		<button class="dialerButton" id="number8" accesskey="8">8</button>
+	    		<button class="dialerButton" id="number9" accesskey="9">9</button>
+    		</div>
+
+    		<div class="dialerRow">
+    			<button class="dialerButton" id="numberStar" accesskey="s">*</button>
+	    		<button class="dialerButton" id="number0" accesskey="1">0</button>
+	    		<button class="dialerButton" id="numberPound" accesskey="p">#</button>
+    		</div>
+
+    		<div class="dialerRow">
+    			<button class="dialerButton" id="numberDial">Dial</button>
+	    		<button class="dialerButton" id="numberClear">Clear</button>
+    		</div>
+    		
+    	</div>
+
+    	<div id="content_contacts" role="main">
+
+    		<h1 class="pageHeader">Contact List</h1>
+
+	    	<div id="contactsWrapper">
+	    		<table id="contactsTable">
+	    			<tr>
+	    				<th>Name</th>
+	    				<th>Phone Number</th>
+	    				<th>Email</th>
+	    				<th>Picture</th>
+	    			</tr>
+	    			<tr class="trOdd">
+	    				<td><button class="contactEntry">Jane Smith</button></td>
+	    				<td><a href="tel:+1-720-123-4567">720-123-4567</a></td>
+	    				<td><a href="mailto:jane@colorado.edu">jane@colorado.edu</a></td>
+	    				<td><img class="contactPic" src="Portrait_Placeholder.png" alt="Placeholder profile picture"></td>
+	    			</tr>
+	    			<tr>
+	    				<td><button class="contactEntry">Connor Guerin</button></td>
+	    				<td><a href="tel:+1-720-123-4567">720-123-4567</a></td>
+	    				<td><a href="mailto:connor.guerin@colorado.edu">connor.guerin@colorado.edu</a></td>
+	    				<td><img class="contactPic" src="Portrait_Placeholder.png" alt="Placeholder profile picture"></td>
+	    			</tr>
+	    			<tr class="trOdd">
+	    				<td><button class="contactEntry">John Doe</button></td>
+	    				<td><a href="tel:+1-720-123-4567">720-123-4567</a></td>
+	    				<td><a href="mailto:john@gmail.com">john@gmail.com</a></td>
+	    				<td><img class="contactPic" src="Portrait_Placeholder.png" alt="Placeholder profile picture"></td>
+	    			</tr>
+	    			<tr>
+	    				<td><button class="contactEntry">Mrs. Butterworth</button></td>
+	    				<td><a href="tel:+1-720-123-4567">720-123-4567</a></td>
+	    				<td><a href="mailto:Butterworth@colorado.edu">Butterworth@colorado.edu</a></td>
+	    				<td><img class="contactPic" src="Portrait_Placeholder.png" alt="Placeholder profile picture"></td>
+	    			</tr>
+	    			<tr class="trOdd">
+	    				<td><button class="contactEntry">Aunt Jemima</button></td>
+	    				<td><a href="tel:+1-720-123-4567">720-123-4567</a></td>
+	    				<td><a href="mailto:AuntJ@gmail.com">AuntJ@gmail.com</a></td>
+	    				<td><img class="contactPic" src="Portrait_Placeholder.png" alt="Placeholder profile picture"></td>
+	    			</tr>
+	    			<tr>
+	    				<td><button class="contactEntry">Bob Pancakes</button></td>
+	    				<td><a href="tel:+1-720-123-4567">720-123-4567</a></td>
+	    				<td><a href="mailto:Pancakes@colorado.edu">Pancakes@colorado.edu</a></td>
+	    				<td><img class="contactPic" src="Pancakes.jpg" alt="Bob Pancakes' profile picture"></td>
+	    			</tr>
+	    			<tr class="trOdd">
+	    				<td><button class="contactEntry">Johnny Waffles</button></td>
+	    				<td><a href="tel:+1-720-123-4567">720-123-4567</a></td>
+	    				<td><a href="mailto:Waffles@gmail.com">Waffles@gmail.com</a></td>
+	    				<td><img class="contactPic" src="Waffles.jpg" alt="Johnny Waffles' profile picture"></td>
+	    			</tr>
+	    			<tr>
+	    				<td><button class="contactEntry">Kevin</button></td>
+	    				<td><a href="tel:+1-720-123-4567">720-123-4567</a></td>
+	    				<td><a href="mailto:Kevin@kevin.io">Kevin@kevin.io</a></td>
+	    				<td><img class="contactPic" src="Portrait_Placeholder.png" alt="Placeholder profile picture"></td>
+	    			</tr>
+
+	    		</table>
+	    		
+	    	</div>
+
+    	</div>
+
+    	<div id="content_addContact" role="main">
+    		<h1 class="pageHeader">Add Contact</h1>
+
+    		<form>
+			  	<label for="name">Name:</label>
+			  	<input id="name" placeholder="Jane Smith">
+			</form>
+
+			<form>
+			  	<label for="phoneNumber">Phone Number:</label>
+			  	<input id="phoneNumber" placeholder="303-123-4567">
+			</form>
+
+			<form>
+			  	<label for="email">Email Address:</label>
+			  	<input id="email" placeholder="jane@colorado.edu">
+			</form>
+
+			<button id="addContact_add">Add Contact</button>
+	    	<button id="addContact_clear">Clear</button>
+
+    	</div>
+
+    	<div id="content_help" role="main">
+    		<h1 class="pageHeader">Help</h1>
+    			<h2>Access Key Shortcuts</h2>
+    			<h3>Tabs</h3>
+    			<ul>
+    				<li>Dialer: Q</li>
+    				<li>Contact List: W</li>
+    				<li>Add Contact: E</li>
+    				<li>Help: R</li>
+    			</ul>
+    			<h3>Dialer</h3>
+    			<ul>
+    				<li>Number Pad: Numbers 0 - 9</li>
+    				<li>* (Star): S</li>
+    				<li># (Pound): P</li>
+    			</ul>
+
+    			<h2>Image Sources</h2>
+    			<p>Placeholder profile picture: <a href="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png">https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png</a></p>
+    			<p>Bob Pancakes' profile picture: <a href="https://upload.wikimedia.org/wikipedia/commons/7/75/Silver_Dollar_Pancakes_with_Blueberry_%285076901336%29.jpg">https://upload.wikimedia.org/wikipedia/commons/7/75/Silver_Dollar_Pancakes_with_Blueberry_%285076901336%29.jpg</a></p>
+    			<p>Johnny Waffles' profile picture: <a href="https://upload.wikimedia.org/wikipedia/commons/1/19/L%C3%BCtticher_Waffeln.jpg">https://upload.wikimedia.org/wikipedia/commons/1/19/L%C3%BCtticher_Waffeln.jpg</a></p>
+    	</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="phone.js"></script>
+
+  </body>
+</html>
